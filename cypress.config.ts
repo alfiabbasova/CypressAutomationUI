@@ -1,8 +1,8 @@
-import { defineConfig } from "cypress";
+import { defineConfig } from 'cypress';
 
 export default defineConfig({
   e2e: {
-    baseUrl: "https://uitestingplayground.com",
+    baseUrl: 'https://uitestingplayground.com',
     
     setupNodeEvents(on, config) {
       // implement node event listeners here
@@ -12,6 +12,7 @@ export default defineConfig({
       prod:'https://coding.pasv.us/course',
       info:'Hello World!',
       base:'https://play1.automationcamp.ir/expected_conditions.html',
+      demoQA: 'https://demoqa.com'
 
     }
   },
