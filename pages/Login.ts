@@ -4,14 +4,13 @@ class Login{
     loginButton: string = '#login';
     logOutButton: string = '#submit';
 
-    submitButtonLogin(){
+    submitButtonLogin() {
         cy.get(this.userName).type('test');
         cy.get(this.password).type('Test1234*');
-        cy.contains(this.loginButton).click();
-        //cy.get('#login').click() //the same as contains
+        //cy.get(this.loginButton).click();
+        cy.contains('button', 'Login').click();
 
-    }
-
+    };
 }
 
 export const LoginPage = new Login();
