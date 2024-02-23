@@ -7,9 +7,9 @@ class Login{
     submitButtonLogin() {
         cy.get(this.userName).type('test');
         cy.get(this.password).type('Test1234*');
-        //cy.get(this.loginButton).click();
-        cy.contains('button', 'Login').click();
-
+        cy.get(this.loginButton).click();
+       // cy.contains('button', 'Login').click();
+        //cy.contains('Log Out');
     };
 }
 
