@@ -19,6 +19,7 @@ export default defineConfig({
       //email: 'alfiyachaikalak@gmail.com',
       //password: 'abc1234321CBA',
       herokuapp: 'https://the-internet.herokuapp.com',
+      iframeHomework: 'https://play1.automationcamp.ir'
     }
   },
   viewportWidth: 1200,
