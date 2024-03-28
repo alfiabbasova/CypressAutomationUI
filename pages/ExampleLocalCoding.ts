@@ -1,4 +1,4 @@
-class Example{
+class Example {
     loginLC: string = '#normal_login_email';
     passwordLC: string = '#normal_login_password';
 
@@ -11,4 +11,3 @@ class Example{
     };
 }
 export const LoginLCPage = new Example();
-

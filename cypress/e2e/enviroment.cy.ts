@@ -8,7 +8,7 @@ describe('ENV', () => {
     it('info', () => {
         cy.log(Cypress.env('info'))
     });
-        // it('baseURL', () => {
-        //     cy.visit('/')
-        // });
+    // it('baseURL', () => {
+    //     cy.visit('/')
+    // });
 });

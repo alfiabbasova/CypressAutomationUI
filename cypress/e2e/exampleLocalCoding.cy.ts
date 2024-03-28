@@ -1,9 +1,9 @@
 import { LoginLCPage } from "../../pages/exampleLocalCoding"
 
 describe('LocalCodingLogin Page', () => {
-     beforeEach(() => {
+    beforeEach(() => {
         cy.visit(`${Cypress.env('localCoding')}/user/login`)
-     });
+    });
 
     it('LocalCodingLogin', () => {
         //cy.visit(`${Cypress.env('localCoding')}/user/login`)

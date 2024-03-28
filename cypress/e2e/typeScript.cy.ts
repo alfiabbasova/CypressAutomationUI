@@ -12,23 +12,28 @@
 //examples
 let a = 5
 let b = 6
-let number:number | string = 8
-let testString:string = "8"
+let number: number | string = 8
+let testString: string = "8"
 const booleanTest: boolean = false
 const booleanTestTrue: boolean = true
-const test1:any = NaN
+const test1: any = NaN
 
-function string(a,b):string{
+function string(a, b): string {
     return "a" + "b";//56 != 11
 }
-function string2(a:number,b:string):number{
+function string2(a: number, b: string): number {
     return +a + +b;//11
 }
 type stringTestType = {
-    lastName:string,
-    firstName:string
+    lastName: string,
+    firstName: string
 }
-function fullName(a:stringTestType,b:stringTestType):void {
+// interface stringTestType = {
+//     lastName:string,
+//     firstName:string
+// }
+
+function fullName(a: stringTestType, b: stringTestType): void {
     console.log('My full name is ' + a.lastName + ' ' + b.firstName);
 }
 // let obj = {
