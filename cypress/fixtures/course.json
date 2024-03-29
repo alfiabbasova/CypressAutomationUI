@@ -1,0 +1,165 @@
+{
+    "message": "Courses get. Success",
+    "success": true,
+    "fail": false,
+    "payload": [
+        {
+            "image": "",
+            "order": 1000,
+            "dependsOn": null,
+            "allowedForRoles": "",
+            "sellOptions": [],
+            "_id": "5d1cba85086fc30038bf1854",
+            "description": "Базовые понятия в Java",
+            "members": [],
+            "sections": [],
+            "name": "Java Syntax",
+            "accessType": "members",
+            "owner": "5b7366b42ffb85d6053b8649",
+            "createdAt": "2019-07-03T14:24:05.570Z",
+            "updatedAt": "2019-07-03T14:24:05.570Z"
+        },
+        {
+            "image": "",
+            "order": 1000,
+            "dependsOn": null,
+            "sellOptions": [],
+            "_id": "5eea941bba6605003cbc9f4f",
+            "description": "",
+            "allowedForRoles": "",
+            "members": [],
+            "sections": [
+                {
+                    "_id": "5efa28583f0046003c2556b1",
+                    "lessons": [
+                        "5efa33423f0046003c255798"
+                    ]
+                },
+                {
+                    "_id": "5eea961aba6605003cbc9f69",
+                    "lessons": [
+                        "5ef3c3b5a3796b003c61193b",
+                        "5eea9643ba6605003cbc9f6d",
+                        "5f07e5779a042d003cd33a2b",
+                        "5f07e5a79a042d003cd33a34",
+                        "5f07e6239a042d003cd33a48"
+                    ]
+                },
+                {
+                    "_id": "5eea968fba6605003cbc9f73",
+                    "lessons": [
+                        "5ef90965231b98003c535067",
+                        "5ef90eba231b98003c535119",
+                        "5ef90f96231b98003c53512f",
+                        "5ef916a2231b98003c5351ee",
+                        "5ef917a8231b98003c535210",
+                        "5ef91824231b98003c53521f",
+                        "5ef91b93231b98003c535287",
+                        "5ef91c0a231b98003c53529e",
+                        "5ef91cdf231b98003c5352c1",
+                        "5ef91b3f231b98003c535275",
+                        "5ef91be9231b98003c535298"
+                    ]
+                },
+                {
+                    "_id": "5ef41c124956ea003cc028f9",
+                    "lessons": [
+                        "5ef41cec4956ea003cc0291b",
+                        "5ef4203d4956ea003cc029be",
+                        "5ef42e854956ea003cc02c15",
+                        "5ef424044956ea003cc02a2b",
+                        "5ef42cce4956ea003cc02baf",
+                        "5ef42ce14956ea003cc02bb3",
+                        "5ef425554956ea003cc02a6d",
+                        "5ef42e124956ea003cc02bfe"
+                    ]
+                },
+                {
+                    "_id": "5ef92a023f0046003c253a4a",
+                    "lessons": [
+                        "5ef92a823f0046003c253a56",
+                        "5ef92b783f0046003c253a90",
+                        "5ef92dec3f0046003c253afb",
+                        "5ef94d973f0046003c25400b",
+                        "5ef94e9b3f0046003c254031",
+                        "5ef94fcb3f0046003c254056",
+                        "5ef95b393f0046003c254261",
+                        "5ef95cf73f0046003c2542b6"
+                    ]
+                },
+                {
+                    "_id": "5ef427514956ea003cc02ad3",
+                    "lessons": [
+                        "5ef427b24956ea003cc02aea",
+                        "5ef428174956ea003cc02afc",
+                        "5ef428294956ea003cc02b00"
+                    ]
+                },
+                {
+                    "_id": "5ef42fdc4956ea003cc02c61",
+                    "lessons": [
+                        "5ef430104956ea003cc02c6b",
+                        "5ef430354956ea003cc02c71",
+                        "5ef433ce4956ea003cc02d0b"
+                    ]
+                },
+                {
+                    "_id": "5ef58665055434003c7a12b0",
+                    "lessons": [
+                        "5ef58788055434003c7a12ca",
+                        "5ef58858055434003c7a12da"
+                    ]
+                },
+                {
+                    "_id": "5ef588b6055434003c7a12f4",
+                    "lessons": [
+                        "5ef5898f055434003c7a1317",
+                        "5ef58f45055434003c7a1414",
+                        "5ef59129055434003c7a1466"
+                    ]
+                },
+                {
+                    "_id": "5ef59146055434003c7a146a",
+                    "lessons": [
+                        "5f07996a15e61c003c2caf47",
+                        "5f0799e915e61c003c2caf75",
+                        "5f079cc915e61c003c2caf96",
+                        "5f079e0315e61c003c2cafae",
+                        "5f07d7cc15e61c003c2cb8ad"
+                    ]
+                },
+                {
+                    "_id": "5f07a1e615e61c003c2cb03a",
+                    "lessons": [
+                        "5f07a26215e61c003c2cb046",
+                        "5f07a37115e61c003c2cb06d"
+                    ]
+                },
+                {
+                    "_id": "5f07a3e815e61c003c2cb07c",
+                    "lessons": [
+                        "5f07a6af15e61c003c2cb0fb"
+                    ]
+                },
+                {
+                    "_id": "5f07f6e29a042d003cd33d24",
+                    "lessons": [
+                        "5f0d3b1c4d5283003cde3c25",
+                        "5f0d3be84d5283003cde3c47",
+                        "5f0d3c5f4d5283003cde3c56",
+                        "5f0d3ce94d5283003cde3c6e",
+                        "5f0d3e714d5283003cde3c9f"
+                    ]
+                },
+                {
+                    "_id": "5f07a7f115e61c003c2cb12d",
+                    "lessons": [
+                        "5f07a9e515e61c003c2cb1af",
+                        "5f07aa3a15e61c003c2cb1bd"
+                    ]
+                }
+            ]
+        }
+    
+    ]
+}

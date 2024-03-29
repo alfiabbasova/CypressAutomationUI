@@ -1,8 +1,13 @@
 describe('INTERCEPT', () => {
     it('network request spy', function() {
-        cy.fixture('progress.json').as('data') //this.data
+        cy.fixture('progress.json').as('dataProgress'); //this.data
+        cy.fixture('course.json').as('dataCourse');
+        cy.fixture('katas.json').as('dataKatas');
         cy.intercept('POST', '*/login').as('login');
-        cy.intercept('https://server-stage.pasv.us/course/coursesProgress/65d426ccdb75721937e5356b', { fixture: "progress.json" }).as('course');
+        cy.intercept('https://server-stage.pasv.us/course/coursesProgress/65d426ccdb75721937e5356b', { fixture: "progress.json" }).as('progress');
+        cy.intercept('https://server-stage.pasv.us/course', { fixture: "course.json" }).as('course');
+        cy.intercept('https://server-stage.pasv.us/progress/codewars/completed/65d426ccdb75721937e5356b', { fixture: "katas.json" }).as('katas');
+
         cy.visit(`${Cypress.env('stage')}/user/login`);
         cy.get('#normal_login_email').type(Cypress.env('email'));
         cy.get('#normal_login_password').type(Cypress.env('password'), { log: false });
@@ -17,10 +22,19 @@ describe('INTERCEPT', () => {
             })
         })
         cy.visit('https://stage.pasv.us/profile/65d426ccdb75721937e5356b/progress')
-        cy.wait('@course').then(el=>{
+        cy.wait('@progress').then(el=>{
             //console.log(el,'response')
-            cy.wrap(this.data).should('deep.equal',el.response.body)
-
+            cy.wrap(this.dataProgress).should('deep.equal',el.response.body)
+        })
+        cy.visit('https://stage.pasv.us/course')
+        cy.wait('@course').then(el=>{
+            cy.wrap(this.dataCourse).should('deep.equal',el.response.body)
+             //console.log(el,'response')
+        })
+        cy.visit('https://stage.pasv.us/profile/65d426ccdb75721937e5356b/katas')
+        cy.wait('@katas').then(el=>{
+            cy.wrap(this.dataKatas).should('deep.equal',el.response.body)
+             //console.log(el,'response')
         })
     })
 })
