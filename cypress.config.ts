@@ -1,6 +1,10 @@
 import { defineConfig } from 'cypress';
 require('dotenv').config()
 
+const xlsx = require("node-xlsx").default;
+const fs = require("fs"); // for file
+const path = require("path");
+
 export default defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
@@ -17,6 +21,19 @@ export default defineConfig({
       //reporter = 'cypress-mochawesome-reporter'
       require('cypress-mochawesome-reporter/plugin')(on);
       // implement node event listeners here
+      //reading excel document from fixture
+      on("task", {
+        parseXlsx({ filePath }) {
+          return new Promise((resolve, reject) => {
+            try {
+              const jsonData = xlsx.parse(fs.readFileSync(filePath));
+              resolve(jsonData);
+            } catch (e) {
+              reject(e);
+            }
+          });
+        },
+      });
     },
     env:{
       stage:'https://stage.pasv.us',
