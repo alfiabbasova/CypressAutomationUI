@@ -1,6 +1,8 @@
 name: Cypress Action Guide
-desctiption: Runs Cypress tests
+description: Runs Cypress tests
+
 on: push
+
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
